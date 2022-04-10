@@ -58,11 +58,58 @@ body{
 header{
     background-color: green;
     grid-column: 2/end;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 #sidebar{
     background-color: red;
     grid-row: 1/end;
+    display: grid;
+    grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr) 3fr
 }
 main{
     background-color: blue;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+
+}
+#searchbar{
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+}
+#projects{
+    grid-row: 1/end;
+    display: grid;
+    grid-template-rows: auto 100%;
+}
+#projects > p{
+    grid-column: 1/end;
+}
+#projectscontent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 50%));
+}
+#announcements{
+    display: grid;
+    grid-template-rows: auto 100%;
+}
+#announcementcontent{
+    display: grid;
+    grid-auto-flow: row;
+}
+#trending{
+    display: grid;
+    grid-template-rows: auto 100%;
+}
+#trendingcontent{
+    display:grid;
+    grid-auto-flow: row;
+}
+.trendingacc{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 3fr;
+}
+div.trendingacc > img{
+    grid-row: 1/3;
 }

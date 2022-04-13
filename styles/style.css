@@ -49,7 +49,6 @@ table {
 /* End of CSS reset */
 body{
     height: 100vh;
-    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
@@ -60,6 +59,16 @@ header{
     grid-column: 2/end;
     display: grid;
     grid-template-rows: 1fr 1fr;
+}
+#headtop{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 4fr auto auto auto;
+}
+#headbot{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 4fr auto auto auto;
 }
 #sidebar{
     background-color: red;
@@ -81,7 +90,8 @@ main{
 #projects{
     grid-row: 1/end;
     display: grid;
-    grid-template-rows: auto 100%;
+    grid-template-rows: 1rem auto;
+    overflow: auto;
 }
 #projects > p{
     grid-column: 1/end;
@@ -89,10 +99,11 @@ main{
 #projectscontent{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 50%));
+    grid-auto-rows: minmax(200px, 50%);
 }
 #announcements{
     display: grid;
-    grid-template-rows: auto 100%;
+    grid-template-rows: 1rem 100%;
 }
 #announcementcontent{
     display: grid;
@@ -100,7 +111,7 @@ main{
 }
 #trending{
     display: grid;
-    grid-template-rows: auto 100%;
+    grid-template-rows: 1rem auto;
 }
 #trendingcontent{
     display:grid;

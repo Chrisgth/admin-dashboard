@@ -52,33 +52,37 @@ body{
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
+    background-color: #e2e8f0;
 }
 
 header{
-    background-color: green;
     grid-column: 2/end;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 1px 4px 4px lightgray;
+    margin-bottom: 1rem;
+    background-color: white;
 }
 #headtop{
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 4fr auto auto auto;
+    align-items: center;
 }
 #headbot{
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 4fr auto auto auto;
+    align-items: center;
 }
 #sidebar{
-    background-color: red;
+    background-color: #0ea5e9;
     grid-row: 1/end;
     display: grid;
     gap: 2rem;
     grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr) 3fr
 }
 main{
-    background-color: blue;
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
     gap: 2rem;
@@ -96,14 +100,17 @@ main{
     gap: 2rem;
     margin-top: 2rem;
     margin-left: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 4px;
 }
 #projects > p{
     grid-column: 1/end;
 }
 #projectscontent{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 50%));
-    grid-auto-rows: minmax(200px, 50%);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: minmax(200px, 1fr);
+    gap: 2rem;
 }
 #announcements{
     display: grid;
@@ -120,6 +127,7 @@ main{
     display: grid;
     grid-template-rows: 1em auto;
     margin-right: 2rem;
+    gap: 2rem;
 }
 #trendingcontent{
     display:grid;
@@ -131,4 +139,28 @@ main{
 }
 div.trendingacc > img{
     grid-row: 1/3;
+}
+
+#projectscontent > div,
+#announcementcontent > div,
+#trendingcontent > div{
+    background-color: white;
+    box-shadow: 2px 4px 4px lightgray;
+}
+#projectscontent > div{
+    border-radius: 10px;
+    border-left: 10px solid orange;
+}
+
+input{
+    border-radius: 16px;
+    background-color: #e2e8f0;
+    border: none;
+    height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+input:focus{
+    outline: none;
 }

@@ -74,13 +74,14 @@ header{
     background-color: red;
     grid-row: 1/end;
     display: grid;
+    gap: 2rem;
     grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr) 3fr
 }
 main{
     background-color: blue;
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
-
+    gap: 2rem;
 }
 #searchbar{
     display: grid;
@@ -90,8 +91,11 @@ main{
 #projects{
     grid-row: 1/end;
     display: grid;
-    grid-template-rows: 1rem auto;
+    grid-template-rows: 1em auto;
     overflow: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 #projects > p{
     grid-column: 1/end;
@@ -103,7 +107,10 @@ main{
 }
 #announcements{
     display: grid;
-    grid-template-rows: 1rem 100%;
+    grid-template-rows: 1em auto;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-right: 2rem;
 }
 #announcementcontent{
     display: grid;
@@ -111,7 +118,8 @@ main{
 }
 #trending{
     display: grid;
-    grid-template-rows: 1rem auto;
+    grid-template-rows: 1em auto;
+    margin-right: 2rem;
 }
 #trendingcontent{
     display:grid;

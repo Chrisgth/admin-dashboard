@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,6 +48,9 @@ table {
 	border-spacing: 0;
 }
 /* End of CSS reset */
+html{
+    font-family: 'Roboto', sans-serif;
+}
 body{
     height: 100vh;
     display: grid;
@@ -77,6 +81,7 @@ header{
 }
 #sidebar{
     background-color: #0ea5e9;
+    color: white;
     grid-row: 1/end;
     display: grid;
     gap: 2rem;
@@ -163,4 +168,13 @@ input{
 
 input:focus{
     outline: none;
+}
+
+button{
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 24px;
 }

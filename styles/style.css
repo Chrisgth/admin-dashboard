@@ -178,3 +178,21 @@ button{
     width: 6rem;
     border-radius: 24px;
 }
+
+img{
+    max-height: 40px;
+}
+
+#sidebar > div > p > img{
+    filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(77deg) brightness(107%) contrast(106%);
+}
+.projectsimgs{
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+.contentcard{
+    display: grid;
+    grid-template-rows: 1em auto 24px;
+    padding: 24px;
+}

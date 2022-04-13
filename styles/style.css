@@ -186,7 +186,8 @@ input:focus{
     outline: none;
 }
 
-button{
+.button{
+    display: flex;
     background-color: #0ea5e9;
     color: white;
     border: none;
@@ -195,6 +196,9 @@ button{
     border-radius: 24px;
     font-weight: bold;
     font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 img{
